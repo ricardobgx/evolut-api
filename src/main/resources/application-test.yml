@@ -1,2 +1,6 @@
 server:
   port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/evolut_test?user=postgres&password=postgres&ssl=false
