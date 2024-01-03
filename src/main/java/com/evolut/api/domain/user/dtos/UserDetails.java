@@ -1,5 +1,6 @@
 package com.evolut.api.domain.user.dtos;
 
+import com.evolut.api.domain.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -16,4 +17,8 @@ public class UserDetails extends RepresentationModel<UserDetails> {
     private UUID id;
     private String name;
     private String email;
+
+    public UserDetails(User user) {
+        this(user.getId(), user.getName(), user.getEmail());
+    }
 }
