@@ -6,6 +6,7 @@ import com.evolut.api.domain.user.models.User;
 import com.evolut.api.domain.user.repositories.UserRepository;
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,8 +16,15 @@ public class CreateUserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     public User execute(CreateUserInput createUserInput) {
         User user = this.userMapper.fromCreateUserInput(createUserInput);
+
+        String encodedPassword = this.passwordEncoder.encode(user.getPassword());
+
+        user.setPassword(encodedPassword);
 
         this.userRepository.save(user);
 
