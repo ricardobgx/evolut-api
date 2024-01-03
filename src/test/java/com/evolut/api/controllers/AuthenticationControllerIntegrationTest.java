@@ -1,4 +1,4 @@
 package com.evolut.api.controllers;
 
-public class AuthenticationControllerIntegrationTest {
+public class AuthenticationControllerIntegrationTest implements AuthenticationControllerTest {
 }
