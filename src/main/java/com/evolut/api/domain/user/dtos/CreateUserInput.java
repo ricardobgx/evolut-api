@@ -10,7 +10,6 @@ public record CreateUserInput(
         @NotBlank
         String email,
         @NotBlank
-        String password,
-        UUID profilePictureId
+        String password
 ) {
 }
