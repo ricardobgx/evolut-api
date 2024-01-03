@@ -1,2 +1,9 @@
 server:
   port: ${PORT}
+
+spring:
+  datasource:
+    url: ${DB_URL}
+  jpa:
+    hibernate:
+      ddl-auto: none
