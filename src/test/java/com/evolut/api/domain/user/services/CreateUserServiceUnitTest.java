@@ -1,4 +1,4 @@
 package com.evolut.api.domain.user.services;
 
-public class CreateUserServiceUnitTest {
+public class CreateUserServiceUnitTest implements CreateUserServiceTest {
 }
