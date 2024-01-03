@@ -16,5 +16,4 @@ public class UserDetails extends RepresentationModel<UserDetails> {
     private UUID id;
     private String name;
     private String email;
-    private UUID profilePictureId;
 }
