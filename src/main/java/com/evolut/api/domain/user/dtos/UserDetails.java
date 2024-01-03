@@ -1,6 +1,6 @@
 package com.evolut.api.domain.user.dtos;
 
-import com.evolut.api.domain.user.User;
+import com.evolut.api.domain.user.models.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

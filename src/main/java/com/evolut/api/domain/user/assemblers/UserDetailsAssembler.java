@@ -1,6 +1,6 @@
 package com.evolut.api.domain.user.assemblers;
 
-import com.evolut.api.domain.user.User;
+import com.evolut.api.domain.user.models.User;
 import com.evolut.api.domain.user.dtos.UserDetails;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
